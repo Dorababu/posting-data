@@ -24,13 +24,11 @@ class Blog extends Component {
                     }
                 });
                 this.setState({ posts: updatedPosts })
-                console.log('respose', updatedPosts);
             })
     }
 
     viewPostHandler = (id) => {
         this.setState({ selectedPost: id });
-        console.log(id);
     }
 
     render() {
